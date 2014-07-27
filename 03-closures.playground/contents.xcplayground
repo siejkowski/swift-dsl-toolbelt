@@ -3,9 +3,5 @@
     <sections>
         <code source-file-name="section-0.swift">
         </code>
-        <documentation relative-path="section-1.html">
-        </documentation>
-        <code source-file-name="section-2.swift">
-        </code>
     </sections>
 </playground>

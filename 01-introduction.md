@@ -1,3 +1,8 @@
+```swift
+import UIKit
+
+```
+
 # Swift DSL toolbelt
 
 A few syntax tools to create custom APIs or Swift dialects
