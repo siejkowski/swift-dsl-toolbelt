@@ -5,10 +5,25 @@
  		location = "group:01-introduction.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:02-operator_overload.playground">
+ 		location = "group:02-dsls.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:03-closures.playground">
+ 		location = "group:03-subscript.playground">
+ 	</FileRef>
+ 	<FileRef
+ 		location = "group:04-parameters.playground">
+ 	</FileRef>
+ 	<FileRef
+ 		location = "group:05-operators.playground">
+ 	</FileRef>
+ 	<FileRef
+ 		location = "group:06-closures.playground">
+ 	</FileRef>
+ 	<FileRef
+ 		location = "group:07-generics.playground">
+ 	</FileRef>
+ 	<FileRef
+ 		location = "group:08-sumup.playground">
  	</FileRef>
 </Workspace>
 

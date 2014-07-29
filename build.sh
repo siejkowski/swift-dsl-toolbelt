@@ -5,9 +5,10 @@ contents=$"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Workspace\n
 
 files=( $(ls | grep .md | grep -v "README" | sed -e "s/.md//") )
 
+rm -r *.playground 
+
 for file in "${files[@]}"
 do
-	rm -r $file.playground 2>/dev/null
 	playground $file.md -p ios -s css/main.css
 	mkdir -p $file.playground/Resources/
 	mkdir -p resources/$file/

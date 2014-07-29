@@ -11,11 +11,20 @@
 <body>
 <div class="content-wrapper">
   <section class="section">
-    <h1 id="swift-dsl-toolbelt">Swift DSL toolbelt</h1>
-<p>A few syntax tools to create custom APIs or Swift dialects</p>
-<p>Some random code in Objective-C:</p>
-<pre><code>NSString* bla = @&quot;bla&quot;;
-</code></pre><p>&nbsp;<br>&nbsp;<br>&nbsp;  </p>
+    <h2 id="subscripting">Subscripting</h2>
+<p>In Objective-C we used:</p>
+<pre><code>- (id)objectForKeyedSubscript:(id)key;
+- (void)setObject:(id)object 
+forKeyedSubscript:(id&lt;NSCopying&gt;)aKey;
+- (id)objectAtIndexedSubscript:
+                    (NSUInteger)index;
+- (void)setObject:(id)anObject 
+atIndexedSubscript:(NSUInteger)index;
+
+object[key] = value
+object[index] = value
+</code></pre><p>to get:  </p>
+<p>&nbsp;  </p>
 
   </section>
 </div>

@@ -1,4 +1,12 @@
-h1 {
-	background-color: black;
-	color: white;
+.section {
+	background-color: transparent;
+	color: black;
+	padding-left: 30px;
+	padding-right: 300px;
+	font-size: large;
+}
+
+code {
+	color: gray;
+	font-size: normal;
 }

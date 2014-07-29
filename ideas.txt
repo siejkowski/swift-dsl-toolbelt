@@ -1,0 +1,23 @@
+structure:
+
+
+) what is dsl and when should we use it and when should we not (!!!)
+
+?) objective-c dsl 
+
+) tools: for syntax in syntaxes
+* syntax + was it doable in objective-c
+* use sample - github library
+* possibilities and limitations
+
+syntaxes = [
+	subscripts (with multiple and closure-based),
+	inout && tuples (class, struct, enums),
+	operator overloading (with association operators),
+	closures (with @auto_closure, trailing closure),
+]
+
+) mixing what we learned + generics
+
+) when should we use it and when should we not
+
