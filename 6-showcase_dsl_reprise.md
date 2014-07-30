@@ -47,6 +47,24 @@
 
 &nbsp;  
 
+    // https://github.com/robb/Cartography
+    layout(view1, view2) { view1, view2 in
+        view1.width   == (view.superview!.width - 50) * 0.5
+        view2.width   == view1.width - 50
+        view1.centerX == view.superview!.centerX
+        view1.top >= view.superview!.top + 20
+    }
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
     // https://github.com/kam800/SwiftMapper
     mapper.map { (field, user) in
         field["user_name"] => user.name
