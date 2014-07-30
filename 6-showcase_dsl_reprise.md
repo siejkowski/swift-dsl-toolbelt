@@ -66,9 +66,7 @@ import Foundation
 
 &nbsp;  
 
-## Why not use DSL?
-
-&nbsp;  
+## Dos and don'ts for DSL writing
 
 &nbsp;  
 
