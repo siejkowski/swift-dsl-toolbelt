@@ -26,6 +26,10 @@
 
 &nbsp;  
 
+&nbsp;  
+
+&nbsp;  
+
 ### To wrap an extensive API into an easier form
 
 	// https://github.com/martydill/ios-queryable
@@ -35,6 +39,10 @@
             orderBy:@"createddate"]
             take:5]
             toArray];
+
+&nbsp;  
+
+&nbsp;  
 
 &nbsp;  
 
@@ -51,6 +59,10 @@
             });
         });
     });
+
+&nbsp;  
+
+&nbsp;  
 
 &nbsp;  
 
@@ -139,6 +151,8 @@ func ^^ (left: String, right: String) -> String {
 }
 "hey" ^^ "ho"
 ```
+&nbsp;  
+
 &nbsp;  
 
 &nbsp;  

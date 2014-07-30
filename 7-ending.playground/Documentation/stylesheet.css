@@ -4,10 +4,20 @@
 	padding-left: 30px;
 	padding-right: 300px;
 	font-size: large;
+	font-family: "PT Serif", "Helvetica", monospace;
+}
+
+h1, h2, h3, h4 {
+	text-align: center;
+	color: rgb(64, 32, 124);
+}
+
+h4 {
+	font-size: large;
 }
 
 code {
-	color: blue;
+	color: rgb(201, 33, 114);
 	font-size: small;
-	font-family: monospace;
+	font-family: "Monaco", "Source Code Pro", monospace;
 }

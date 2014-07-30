@@ -4,9 +4,13 @@
 
 &nbsp;  
 
-## Subscripting
+# Subscripting
 
 #### Almost the same as in Objective-C
+
+&nbsp;  
+
+&nbsp;  
 
 &nbsp;  
 

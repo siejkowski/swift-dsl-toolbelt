@@ -4,9 +4,9 @@
 
 &nbsp;  
 
-## Closures
+# Closures
 
-Block on steroids. Easier to work with, easier to pass around.
+#### Block on steroids. Easier to work with, easier to pass around.
 
 &nbsp;  
 

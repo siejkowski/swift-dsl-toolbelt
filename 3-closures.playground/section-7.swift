@@ -6,6 +6,7 @@ let closureReturningClosure: (Int -> Int) ->
  	}
 }
 
-let notChainedResult = (closureReturningClosure { 10 * $0 }) { 20 * $0 }
+let notChainedResult = 
+	(closureReturningClosure { 10 * $0 }) { 20 * $0 }
 
 notChainedResult
