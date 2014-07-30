@@ -4,9 +4,11 @@ swift-dsl-toolbelt
 Workspace and playground files for a short talk at SwiftWarsaw meetup on 31.07.2014.
 
 First install swift-playground-builder:
+    
     npm install -g swift-playground-builder
 
 Then run with:
+    
     sh build.sh
 
 Enjoy! Just remember that Xcode doesn't like to have multiple playgrounds open - close the current one before opening another.
