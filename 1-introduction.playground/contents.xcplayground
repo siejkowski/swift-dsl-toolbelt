@@ -5,5 +5,7 @@
         </documentation>
         <code source-file-name="section-1.swift">
         </code>
+        <documentation relative-path="section-2.html">
+        </documentation>
     </sections>
 </playground>

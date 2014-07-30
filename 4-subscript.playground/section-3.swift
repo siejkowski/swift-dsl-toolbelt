@@ -1,5 +1,5 @@
 
-extend Subscriptable {
+extension Subscriptable {
     subscript(tuple: (Int, Int)) -> Int {
         return tuple.0
     }

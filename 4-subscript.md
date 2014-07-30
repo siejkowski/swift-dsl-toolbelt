@@ -2,8 +2,6 @@
 
 &nbsp;  
 
-&nbsp;  
-
 # Subscripting
 
 #### Almost the same as in Objective-C

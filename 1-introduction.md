@@ -1,6 +1,10 @@
+&nbsp;  
+
 # Swift DSL toolbelt
 
-#### A few syntactic explorations.
+#### A few syntactic explorations
+
+&nbsp;  
 
 &nbsp;  
 
@@ -9,3 +13,5 @@ enum Begin { case Now }
 
 let theShow = Begin.Now
 ```
+
+&nbsp;  

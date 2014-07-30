@@ -2,8 +2,6 @@
 
 &nbsp;  
 
-&nbsp;  
-
 # Operator overload
 
 &nbsp;  

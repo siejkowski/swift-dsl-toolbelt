@@ -1,3 +1,5 @@
+&nbsp;  
+
 # Thank you!
 
 &nbsp;  
@@ -32,6 +34,8 @@ struct Question {
 }
 let question: Question? = Question.beAnswered()
 ```
+
+&nbsp;  
 
 &nbsp;  
 

@@ -2,8 +2,6 @@
 
 &nbsp;  
 
-&nbsp;  
-
 # Why use DSL?
 
 &nbsp;  
@@ -48,7 +46,7 @@
 
 &nbsp;  
 
-### To bring widely-used conventions and techniques to the language
+### To bring widely-used conventions and techniques to the platform
 
     // https://github.com/kiwi-bdd/Kiwi
     describe(@"Team", ^{
@@ -68,7 +66,7 @@
 
 &nbsp;  
 
-### To strip boilerplate
+### To reduce boilerplate
 
     // https://github.com/krzysztofzablocki/KZPropertyMapper
     [KZPropertyMapper mapValuesFrom:dictionary 
@@ -91,6 +89,8 @@
 &nbsp;  
 
 # Why not to use DSL?
+
+&nbsp;  
 
 &nbsp;  
 
