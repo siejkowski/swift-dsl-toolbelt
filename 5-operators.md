@@ -16,7 +16,7 @@
 
 &nbsp;  
 
-#### Very limited set of characters is alowed
+#### Very limited set of characters is allowed
 
 /­  =­  -­  +­  !­  *­  %­  <­  >­  &­  |­  ^­  ~­
 also dots and unicode symbols

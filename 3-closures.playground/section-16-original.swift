@@ -3,3 +3,4 @@ func workingToday<T>(closure: @auto_closure () -> T) -> T? {
 }
 
 //workingToday "please work"
+

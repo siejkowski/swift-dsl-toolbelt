@@ -97,7 +97,8 @@ let closureReturningClosure: (Int -> Int) ->
  	}
 }
 
-let notChainedResult = (closureReturningClosure { 10 * $0 }) { 20 * $0 }
+let notChainedResult = 
+	(closureReturningClosure { 10 * $0 }) { 20 * $0 }
 
 notChainedResult
 ```
@@ -199,31 +200,8 @@ func workingToday<T>(closure: @auto_closure () -> T) -> T? {
 
 //workingToday "please work"
 
-```
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-#### Nor there is an auto closure with parameters
-
-&nbsp;  
-
-```swift
-//func workingWhenSupplied(closure: @auto_closure (String) -> String) -> String? {
-//    return closure("a")
-//}
-//
-//workingWhenSupplied("please work")
 
 ```
-&nbsp; 
-
 &nbsp;  
 
 &nbsp;  
@@ -250,20 +228,3 @@ doSth(-, 10, 5)
 &nbsp;  
 
 &nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-#### Functions are not treated as trailing clousures!
-&nbsp;  
-
-```swift
-func doSthYoda<T>(second: T, first: T, function: (T, T) -> T) -> T {
-	return function(first, second)
-}
-
-doSthYoda(10, 5, -)
-//doSthYoda(10, 5) -
-```
-&nbsp; 
