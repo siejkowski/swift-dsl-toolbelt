@@ -18,13 +18,43 @@
 
 &nbsp;  
 
+```swift
+
+class Subscriptable {
+    var value: String = "subscripted"
+    subscript(index: String) -> String {
+        get {
+            return "\(index) \(value)"
+        }
+        set {
+            self.value = newValue
+        }
+    }
+}
+let example = Subscriptable()
+example["some string"]
+example[""] = "overscripted"
+example["some string"]
+
+```
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 #### Subscripts can be overloaded  
 
 &nbsp;  
 
 ```swift
 
-class Subscriptable {
+extension Subscriptable {
     subscript(tuple: (Int, Int)) -> Int {
         return tuple.0
     }
