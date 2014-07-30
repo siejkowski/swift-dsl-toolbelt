@@ -11,7 +11,44 @@
 <body>
 <div class="content-wrapper">
   <section class="section">
-    
+    <h1 id="why-use-dsl-">Why use DSL?</h1>
+<h3 id="to-express-the-strictly-limited-functionality-in-a-more-readable-way">To express the strictly limited functionality in a more readable way</h3>
+<pre><code>// https://github.com/iMartinKiss/KeepLayout
+[@[`viewOne, viewTwo, viewThree] keepHorizontalOffsets:KeepRequired(20.f)];
+</code></pre><h3 id="to-wrap-an-extensive-api-into-easier-form">To wrap an extensive API into easier form</h3>
+<pre><code>// https://github.com/martydill/ios-queryable
+NSArray* widgets = [[[[[self.managedObjectContext ofType:@&quot;Widget&quot;]
+        where:@&quot;Type == &#39;abc&#39;&quot;]
+        orderBy:@&quot;createddate&quot;]
+        take:5]
+        toArray];
+</code></pre><h3 id="to-bring-widely-used-conventions-and-techniques-to-the-language">To bring widely-used conventions and techniques to the language</h3>
+<pre><code>// https://github.com/kiwi-bdd/Kiwi
+describe(@&quot;Team&quot;, ^{
+    context(@&quot;when newly created&quot;, ^{
+        it(@&quot;should have 11 players&quot;, ^{
+            id team = [Team team];
+            [[[team should] have:11] players];
+        });
+    });
+});
+</code></pre><h3 id="to-strip-boilerplate">To strip boilerplate</h3>
+<pre><code>// https://github.com/krzysztofzablocki/KZPropertyMapper
+[KZPropertyMapper mapValuesFrom:dictionary toInstance:self usingMapping:@{
+    @&quot;videoURL&quot; : KZBox(URL, contentURL).isRequired().min(10),
+    @&quot;name&quot; : KZProperty(title).lengthRange(5, 12),
+    @&quot;videoType&quot; : KZProperty(type),
+    @&quot;sub_object&quot; : @{
+        @&quot;title&quot; : KZProperty(uniqueID),
+    },
+}];
+</code></pre><h1 id="why-not-use-dsl-">Why not use DSL?</h1>
+<h3 id="to-be-clever">To be clever</h3>
+<h3 id="to-misleading">To misleading</h3>
+<h3 id="to-be-funny-and-clever">To be funny and clever</h3>
+<h3 id="to-make-it-harder-for-new-programmers">To make it harder for new programmers</h3>
+<h3 id="to-be-funny-clever-and-smart">To be funny, clever and smart</h3>
+
   </section>
 </div>
 </body>

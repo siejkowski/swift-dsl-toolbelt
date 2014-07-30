@@ -43,5 +43,9 @@
         </documentation>
         <code source-file-name="section-20.swift">
         </code>
+        <documentation relative-path="section-21.html">
+        </documentation>
+        <code source-file-name="section-22.swift">
+        </code>
     </sections>
 </playground>

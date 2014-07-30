@@ -8,22 +8,19 @@
  		location = "group:02-dsls.playground">
  	</FileRef>
  	<FileRef
+ 		location = "group:03-closures.playground">
+ 	</FileRef>
+ 	<FileRef
  		location = "group:03-subscript.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:04-parameters.playground">
+ 		location = "group:04-operators.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:05-operators.playground">
+ 		location = "group:05-showcase.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:06-closures.playground">
- 	</FileRef>
- 	<FileRef
- 		location = "group:07-generics.playground">
- 	</FileRef>
- 	<FileRef
- 		location = "group:08-sumup.playground">
+ 		location = "group:06-dsl_reprise.playground">
  	</FileRef>
 </Workspace>
 

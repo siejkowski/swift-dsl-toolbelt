@@ -1,27 +1,11 @@
-```swift
-import UIKit
-
-```
-
 # Swift DSL toolbelt
 
-A few syntax tools to create custom APIs or Swift dialects
+A few syntax tools in Swift.
 
-Some random code in Objective-C:
-
-```
-NSString* bla = @"bla";
-```
-
-&nbsp;  
-&nbsp;  
-&nbsp;  
-
+Hacking, mostly.
 
 ```swift
-let author = "Krzysztof Siejkowski"
-let twitter = "@_siejkowski"
-let company = "Touk"
-let reason = "Swift Warsaw"
+struct Begin {}
 
+let show = Begin()
 ```

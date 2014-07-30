@@ -21,3 +21,13 @@ syntaxes = [
 
 ) when should we use it and when should we not
 
+
+inout - w tym inout w operatorach (bo assignment)
+operatory
+switche - w tym ~= umożliwiające użycie
+range .. i ... i ..< - nie da się (jeszcze?)
+optional ? i ! - ?
+@auto_closure
+@noreturn
+trailing closures
+subscripty - możliwe jest dowolnie wiele takich subscriptów przyjmujących dowolne dane
