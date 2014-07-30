@@ -47,6 +47,22 @@
 
 &nbsp;  
 
+    // https://github.com/Quick/Nimble
+    expect(1).to(equal(1))
+    expect(1.2).to(beCloseTo(1.1, within: 1)) 
+    expect{ "hello" }.to(equalTo("hello"))
+    expect(value).toEventually(equal(1))
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
     // https://github.com/robb/Cartography
     layout(view1, view2) { view1, view2 in
         view1.width   == (view.superview!.width - 50) * 0.5
