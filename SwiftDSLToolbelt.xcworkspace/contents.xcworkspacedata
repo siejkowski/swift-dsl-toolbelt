@@ -2,25 +2,25 @@
 <Workspace
  	version = "1.0">
  	<FileRef
- 		location = "group:01-introduction.playground">
+ 		location = "group:1-introduction.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:02-dsls.playground">
+ 		location = "group:2-dsls.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:03-closures.playground">
+ 		location = "group:3-closures.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:03-subscript.playground">
+ 		location = "group:4-subscript.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:04-operators.playground">
+ 		location = "group:5-operators.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:05-showcase.playground">
+ 		location = "group:6-showcase_dsl_reprise.playground">
  	</FileRef>
  	<FileRef
- 		location = "group:06-dsl_reprise.playground">
+ 		location = "group:7-ending.playground">
  	</FileRef>
 </Workspace>
 

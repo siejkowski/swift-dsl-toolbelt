@@ -19,7 +19,7 @@ do
    \t</FileRef>\n"
 done
 
-rm SwiftDSLToolbelt.xcworkspace/contents.xcworkspacedata
+rm -r SwiftDSLToolbelt.xcworkspace/*
 
 contents=$contents$"</Workspace>\n"
 
