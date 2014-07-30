@@ -1,5 +1,5 @@
-func notWorkingToday<T>(closure: @auto_closure () -> T) -> T? { 
-	return nil
+func workingToday<T>(closure: @auto_closure () -> T) -> T? { 
+	return closure()
 }
 
-notWorkingToday("please work")
+//workingToday "please work"

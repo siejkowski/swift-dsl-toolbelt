@@ -1,5 +1,4 @@
-func transformator<T>(argument: T, inout closure: T -> T) -> () {
-	closure = { $0; return argument }
+let executeClosureWithZero: (Int -> Int) -> Int = { 
+	return $0(0) 
 }
-var tmp: String -> String = { return $0 }
-//transformator("not possible", &tmp)
+executeClosureWithZero { return 30 &/ $0 }

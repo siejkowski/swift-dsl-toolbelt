@@ -1,6 +1,23 @@
-operator prefix ♥ {}
-operator postfix ☕ {}
-@prefix func ♥ <T> (value: T) -> String { return "I love \(value)" }
-@postfix func ☕ <T> (value: T) -> String { return "\(value) but I need some coffee!" }
+class PatternMatchable {
+	let id : Int
+	init(_ id: Int) { self.id = id }
+}
 
-♥"Swift"☕
+operator infix ~= {}
+func ~=(a: PatternMatchable, b: PatternMatchable) -> Bool {
+    return a.id == b.id
+}
+func ~=(a: String, b: PatternMatchable) -> Bool {
+    return a.toInt() == b.id
+}
+
+let matchMe = PatternMatchable(0)
+
+switch matchMe {
+	case PatternMatchable(1):
+        "bingo!"
+    case "2":
+    	"another bingo!"
+    default:
+        "missed"
+}

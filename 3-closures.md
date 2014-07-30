@@ -1,32 +1,44 @@
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 ## Closures
 
 Block on steroids. Easier to work with, easier to pass around.
 
-#### Closures escape the name in named parameters:
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+#### Trailing closures
 
 &nbsp;  
 
 ```swift
-func executor<T>(argument: T, #closure: T -> T) -> T {
+func trailing<T>(argument: T, closure: T -> T) -> T {
 	return closure(argument)
 }
-let executed = executor("looks like i'm gonna be returned", { return $0 })
-
-executed
-```
-&nbsp;  
-#### No inout closure passing is possible
-
-&nbsp;  
-
-```swift
-func transformator<T>(argument: T, inout closure: T -> T) -> () {
-	closure = { $0; return argument }
+trailing("impossible") {
+	return "\($0) is nothing"	
 }
-var tmp: String -> String = { return $0 }
-//transformator("not possible", &tmp)
 ```
 &nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 #### Trailing closures work in closures themselfs
 
 &nbsp;  
@@ -37,7 +49,16 @@ let executeClosureWithZero: (Int -> Int) -> Int = {
 }
 executeClosureWithZero { return 30 &/ $0 }
 ```
-&nbsp; 
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 #### Only the last one of variadic closures can be trailing
 &nbsp;  
 
@@ -49,12 +70,20 @@ let ignoringNotTrailingClosure: ((Int -> Int)...) -> Int = {
 let result = ignoringNotTrailingClosure(
     	{ 10 * $0 },
     	{ 20 * $0 }
-    )
-    { return 30 * $0 }
+    	)
+    	{ return 30 * $0 }
 
 result
 ```
-&nbsp; 
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
 
 #### Cannot chain trailing closures
 &nbsp;  
@@ -72,7 +101,15 @@ let notChainedResult = (closureReturningClosure { 10 * $0 }) { 20 * $0 }
 
 notChainedResult
 ```
-&nbsp; 
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
 
 #### Chaining is possible with operator
 &nbsp;  
@@ -82,10 +119,19 @@ notChainedResult
  	return argument(closure)
 }
 
-let operatorChainedResult = closureReturningClosure { 10 * $0 } + { 20 * $0 }
+let operatorChainedResult = 
+		closureReturningClosure { 10 * $0 } + { 20 * $0 }
 
 operatorChainedResult
 ```
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 &nbsp;  
 
 #### Or with dedicated chaining object
@@ -105,10 +151,19 @@ let withChainedClosure: (Int -> Int) -> With<Int> = {
  	return With($0(1))
 }
 
-let withChainedResult = withChainedClosure{ 10 * $0 }.with{ 20 * $0 }
+let withChainedResult = 
+	withChainedClosure{ 10 * $0 }.with{ 20 * $0 }
 
 withChainedResult
 ```
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 &nbsp;  
 
 ### @auto_closure
@@ -121,7 +176,16 @@ func notWorkingToday<T>(closure: @auto_closure () -> T) -> T? {
 }
 
 notWorkingToday("please work")
+
 ```
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 &nbsp;  
 
 #### But there is no trailing auto closure
@@ -134,8 +198,17 @@ func workingToday<T>(closure: @auto_closure () -> T) -> T? {
 }
 
 //workingToday "please work"
+
 ```
-&nbsp; 
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
 
 #### Nor there is an auto closure with parameters
 
@@ -147,10 +220,20 @@ func workingToday<T>(closure: @auto_closure () -> T) -> T? {
 //}
 //
 //workingWhenSupplied("please work")
+
 ```
 &nbsp; 
 
-&nbsp; 
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 #### Functions are closures
 
 &nbsp;  
@@ -162,7 +245,15 @@ func doSth<T>(function: (T, T) -> T, first: T, second: T) -> T {
 
 doSth(-, 10, 5)
 ```
-&nbsp; 
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
 
 #### Functions are not treated as trailing clousures!
 &nbsp;  

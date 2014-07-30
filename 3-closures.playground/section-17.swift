@@ -1,5 +1,5 @@
-func workingToday<T>(closure: @auto_closure () -> T) -> T? { 
-	return closure()
-}
-
-//workingToday "please work"
+//func workingWhenSupplied(closure: @auto_closure (String) -> String) -> String? {
+//    return closure("a")
+//}
+//
+//workingWhenSupplied("please work")

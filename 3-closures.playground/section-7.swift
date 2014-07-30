@@ -1,11 +1,11 @@
-let ignoringNotTrailingClosure: ((Int -> Int)...) -> Int = {
-	return $0[$0.count - 1](1)
+let closureReturningClosure: (Int -> Int) ->
+     ((Int -> Int) -> Int) = {
+ 	let result = $0(1)
+ 	return { closure in
+ 		return closure(result)
+ 	}
 }
 
-let result = ignoringNotTrailingClosure(
-    	{ 10 * $0 },
-    	{ 20 * $0 }
-    )
-    { return 30 * $0 }
+let notChainedResult = (closureReturningClosure { 10 * $0 }) { 20 * $0 }
 
-result
+notChainedResult

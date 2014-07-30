@@ -1,4 +1,16 @@
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 # Why use DSL?
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
 
 &nbsp;  
 
@@ -74,7 +86,11 @@
 
 &nbsp;  
 
-### To be clever
+&nbsp;  
+
+&nbsp;  
+
+### To make it harder to understand your code
 
 &nbsp;  
 
@@ -103,34 +119,6 @@
 &nbsp;  
 
 ### To be funny and clever
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-### To make it harder to understand your code
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-### To be funny, clever and smart
 
 &nbsp;  
 

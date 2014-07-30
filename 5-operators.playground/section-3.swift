@@ -1,23 +1,14 @@
-class PatternMatchable {
-	let id : Int
-	init(_ id: Int) { self.id = id }
+func updateValue<T>(value: T, inout updated: T) -> () {
+    updated = value
 }
+var word = "brzydota"
+updateValue("piękno", &word)
+word
 
-operator infix ~= {}
-func ~=(a: PatternMatchable, b: PatternMatchable) -> Bool {
-    return a.id == b.id
+operator infix --> {}
+func --><T>(value: T, inout updated: T) -> () {
+    updated = value
 }
-func ~=(a: String, b: PatternMatchable) -> Bool {
-    return a.toInt() == b.id
-}
-
-let matchMe = PatternMatchable(0)
-
-switch matchMe {
-	case PatternMatchable(1):
-        "bingo!"
-    case "2":
-    	"another bingo!"
-    default:
-        "missed"
-}
+var anotherWord = "marność"
+"możność" --> anotherWord
+anotherWord

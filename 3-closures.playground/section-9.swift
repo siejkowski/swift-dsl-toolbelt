@@ -1,11 +1,8 @@
-let closureReturningClosure: (Int -> Int) ->
-     ((Int -> Int) -> Int) = {
- 	let result = $0(1)
- 	return { closure in
- 		return closure(result)
- 	}
+@infix func + (argument: (Int -> Int) -> Int, closure: Int -> Int) -> Int {
+ 	return argument(closure)
 }
 
-let notChainedResult = (closureReturningClosure { 10 * $0 }) { 20 * $0 }
+let operatorChainedResult = 
+		closureReturningClosure { 10 * $0 } + { 20 * $0 }
 
-notChainedResult
+operatorChainedResult

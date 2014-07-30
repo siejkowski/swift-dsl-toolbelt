@@ -1,14 +1,6 @@
-func updateValue<T>(value: T, inout updated: T) -> () {
-    updated = value
-}
-var word = "brzydota"
-updateValue("piękno", &word)
-word
+operator prefix ♥ {}
+operator postfix ☕ {}
+@prefix func ♥ <T> (value: T) -> String { return "I love \(value)" }
+@postfix func ☕ <T> (value: T) -> String { return "\(value) but I need some coffee!" }
 
-operator infix --> {}
-func --><T>(value: T, inout updated: T) -> () {
-    updated = value
-}
-var anotherWord = "marność"
-"możność" --> anotherWord
-anotherWord
+♥"Swift"☕

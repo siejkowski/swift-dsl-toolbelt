@@ -1,4 +1,41 @@
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 ## Operator overload
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+#### Very limited set of operators is alowed
+
+/­  =­  -­  +­  !­  *­  %­  <­  >­  &­  |­  ^­  ~­
+also dots and unicode symbols
+
+&nbsp;  
+
+```swift
+operator prefix ♥ {}
+operator postfix ☕ {}
+@prefix func ♥ <T> (value: T) -> String { return "I love \(value)" }
+@postfix func ☕ <T> (value: T) -> String { return "\(value) but I need some coffee!" }
+
+♥"Swift"☕
+```
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
 
 #### Operators don't require '&' syntax when obtaining inout value
 
@@ -21,6 +58,15 @@ var anotherWord = "marność"
 anotherWord
 ```
 &nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 #### Providing ~= operator enables any type to be pattern matchable
 
 &nbsp;  
@@ -51,19 +97,7 @@ switch matchMe {
 }
 ```
 &nbsp;  
-#### Very limited set of operators is alowed
-
-/­  =­  -­  +­  !­  *­  %­  <­  >­  &­  |­  ^­  ~­
-also dots and unicode symbols
 
 &nbsp;  
 
-```swift
-operator prefix ♥ {}
-operator postfix ☕ {}
-@prefix func ♥ <T> (value: T) -> String { return "I love \(value)" }
-@postfix func ☕ <T> (value: T) -> String { return "\(value) but I need some coffee!" }
-
-♥"Swift"☕
-```
 &nbsp;  

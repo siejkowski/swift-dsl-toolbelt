@@ -1,4 +1,18 @@
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 ## Subscripting
+
+#### Almost the same as in Objective-C
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
 
 #### Subscripts can be overloaded  
 
@@ -21,6 +35,15 @@ let tuple: (Int, Int) = subscriptable[(1,2)]
 let element: Int = subscriptable[(1,2)]
 ```
 &nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 #### Subscripts can't be generic
 
 &nbsp;  
@@ -32,6 +55,14 @@ class NotGeneric {
     // }
 }
 ```
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
 &nbsp;  
 
 #### Subscripts can't be write-only, but we can just ignore get
@@ -49,20 +80,5 @@ class WriteOnlyWannabe {
 WriteOnlyWannabe()["doesn't matter"] = "to be printed"
 ```
 &nbsp;  
-#### Nothing is also a type
 
 &nbsp;  
-
-```swift
-// by Rob Rix
-extension Array {
-    subscript (i: ()) -> Swift.Array.Element {
-        get { return self[self.count - 1] }
-        set { self.append(newValue) }
-    }
-}
-var array: [String] = []
-array[] = "newValue"
-array[]
-```
-&nbsp; 

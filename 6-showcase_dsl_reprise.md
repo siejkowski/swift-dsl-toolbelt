@@ -1,51 +1,60 @@
+```swift
+import Foundation
+```
+&nbsp;  
+
+&nbsp;  
+
 ## Showcase
 
 &nbsp;  
 
-```swift
-// by Leszek Ślażyński, https://github.com/slazyk
- 
-enum Bound<T: ForwardIndex> {
-    case Closed (@auto_closure () -> T)
-    case Open   (@auto_closure () -> T)
-}
+&nbsp;  
 
-operator prefix  | { }
-@prefix func  | <T: ForwardIndex> (x: T) -> Bound<T> {
-    return .Open   (x)
-}
-operator postfix | { }
-@postfix func | <T: ForwardIndex> (x: T) -> Bound<T> {
-    return .Open   (x)
-}
-operator prefix  < { }
-@prefix func  < <T: ForwardIndex> (x: T) -> Bound<T> {
-    return .Closed (x)
-}
-operator postfix > { }
-@postfix func > <T: ForwardIndex> (x: T) -> Bound<T> {
-    return .Closed (x)
-}
+&nbsp;  
 
-@infix func .. <T: ForwardIndex> (f: Bound<T>, t: Bound<T>) -> Range<T> {
-    switch (f, t) {
-        case (.Closed (let x), .Closed (let y)):
-            return x()...y()
-        case (.Closed (let x), .Open   (let y)):
-            return x()..<y()
-        case (.Open   (let x), .Closed (let y)):
-            return x().successor()...y()
-        case (.Open   (let x), .Open   (let y)):
-            return x().successor()..<y()
-    }
-}
+&nbsp;  
 
-<1..5>
-<1..5| 
-|1..5> 
-|1..5|
-```
+&nbsp;  
+
+    // by Leszek Ślażyński, 
+    // https://github.com/slazyk
+    <1..5>
+    <1..5| 
+    |1..5> 
+    |1..5|
+
 &nbsp; 
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+    // by Kyle Fuller
+    // https://github.com/kylef/QueryKit
+    Person.queryset(context)
+          .filter(Person.name == "Kyle")
+          .delete()
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+&nbsp;  
+
+    // https://github.com/kam800/SwiftMapper
+    mapper.map { (field, user) in
+        field["user_name"] => user.name
+        field.min(18)["age"] => user.age
+    }
 
 &nbsp;  
 

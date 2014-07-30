@@ -1,7 +1,16 @@
-@infix func + (argument: (Int -> Int) -> Int, closure: Int -> Int) -> Int {
- 	return argument(closure)
+class With<T> { 
+ 	let argument: T
+ 	init(_ argument: T) { self.argument = argument }
+ 	func with(closure: T -> T) -> T {
+		return closure(argument)
+	}
 }
 
-let operatorChainedResult = closureReturningClosure { 10 * $0 } + { 20 * $0 }
+let withChainedClosure: (Int -> Int) -> With<Int> = {
+ 	return With($0(1))
+}
 
-operatorChainedResult
+let withChainedResult = 
+	withChainedClosure{ 10 * $0 }.with{ 20 * $0 }
+
+withChainedResult

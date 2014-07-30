@@ -1,5 +1,5 @@
-//func workingWhenSupplied(closure: @auto_closure (String) -> String) -> String? {
-//    return closure("a")
-//}
-//
-//workingWhenSupplied("please work")
+func doSth<T>(function: (T, T) -> T, first: T, second: T) -> T {
+	return function(first, second)
+}
+
+doSth(-, 10, 5)

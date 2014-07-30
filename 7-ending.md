@@ -2,6 +2,7 @@
 
 &nbsp;  
 ```swift
+enum Show { case IsFinished }
 let author = "Krzysztof Siejkowski"
 let twitter = "@_siejkowski"
 let company = "Touk"
