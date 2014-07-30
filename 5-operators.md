@@ -16,7 +16,7 @@
 
 &nbsp;  
 
-#### Very limited set of operators is alowed
+#### Very limited set of characters is alowed
 
 /­  =­  -­  +­  !­  *­  %­  <­  >­  &­  |­  ^­  ~­
 also dots and unicode symbols
