@@ -1,5 +1,24 @@
 structure:
 
+- za dużo? można ciut wywalić
+
+- rozwinąć skrót dsl
+
+- ruby, nie raby
+
+- o closurach za długo względem pozostałych rzeczy
+
+- na początku wolno, potem za szybko, wyrównać prędkość
+
+- błędy ortograficzne
+
+- funkcje są specjalnym przypadkiem closurów
+
+- zakresy Leszka -> powiedzieć, że są lepsze, bo mają 4 zakresy, a nie dwa, jak w Swifcie
+
+- na koniec można powiedzieć o swift playground builder
+
+- 
 
 ) what is dsl and when should we use it and when should we not (!!!)
 

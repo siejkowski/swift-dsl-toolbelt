@@ -19,44 +19,22 @@
 <p>&nbsp;  </p>
 <p>&nbsp;  </p>
 <p>&nbsp;  </p>
+<pre><code>// https://github.com/Quick/Nimble
+expect(1).to(equal(1))
+expect(1.2).to(beCloseTo(1.1, within: 1)) 
+expect{ &quot;hello&quot; }.to(equalTo(&quot;hello&quot;))
+expect(value).toEventually(equal(1))
+</code></pre><p>&nbsp; </p>
+<p>&nbsp;  </p>
+<p>&nbsp;  </p>
+<p>&nbsp;  </p>
+<p>&nbsp;  </p>
 <pre><code>// by Leszek Ślażyński, 
 // https://github.com/slazyk
 &lt;1..5&gt;
 &lt;1..5| 
 |1..5&gt; 
 |1..5|
-</code></pre><p>&nbsp; </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<pre><code>// by Kyle Fuller
-// https://github.com/kylef/QueryKit
-Person.queryset(context)
-      .filter(Person.name == &quot;Kyle&quot;)
-      .delete()
-</code></pre><p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<pre><code>// https://github.com/Quick/Nimble
-expect(1).to(equal(1))
-expect(1.2).to(beCloseTo(1.1, within: 1)) 
-expect { &quot;hello&quot; }.to(equalTo(&quot;hello&quot;))
-expect(value).toEventually(equal(1))
-</code></pre><p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<p>&nbsp;  </p>
-<pre><code>// https://github.com/robb/Cartography
-layout(view1, view2) { view1, view2 in
-    view1.width   == (view.superview!.width - 50) * 0.5
-    view2.width   == view1.width - 50
-    view1.centerX == view.superview!.centerX
-    view1.top &gt;= view.superview!.top + 20
-}
 </code></pre><p>&nbsp;  </p>
 <p>&nbsp;  </p>
 <p>&nbsp;  </p>

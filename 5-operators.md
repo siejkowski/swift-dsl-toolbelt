@@ -17,7 +17,7 @@
 #### Very limited set of characters is allowed
 
 /­  =­  -­  +­  !­  *­  %­  <­  >­  &­  |­  ^­  ~­
-also dots and unicode symbols
+also dots and unicode symbols (strictly defined in language grammar)
 
 &nbsp;  
 

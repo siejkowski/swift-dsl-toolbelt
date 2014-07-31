@@ -14,7 +14,7 @@
 
 &nbsp;  
 
-### To express the strictly limited functionality in a more readable way
+### To reduce boilerplate - e.g. wrap an extensive API into an easier form
 
 	// https://github.com/iMartinKiss/KeepLayout
 	[@[viewOne, viewTwo, viewThree] 
@@ -28,7 +28,7 @@
 
 &nbsp;  
 
-### To wrap an extensive API into an easier form
+### To express the strictly limited functionality in a more readable way
 
 	// https://github.com/martydill/ios-queryable
     NSArray* widgets = [[[[[self.managedObjectContext 
@@ -66,29 +66,7 @@
 
 &nbsp;  
 
-### To reduce boilerplate
-
-    // https://github.com/krzysztofzablocki/KZPropertyMapper
-    [KZPropertyMapper mapValuesFrom:dictionary 
-                         toInstance:self 
-                       usingMapping:@{
-        @"videoURL" : KZBox(URL, contentURL).isRequired().min(10),
-        @"name" : KZProperty(title).lengthRange(5, 12),
-        @"videoType" : KZProperty(type),
-        @"sub_object" : @{
-            @"title" : KZProperty(uniqueID),
-        },
-    }];
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-# Why not to use DSL?
+# What matters when writing a DSL?
 
 &nbsp;  
 
@@ -102,7 +80,7 @@
 
 &nbsp;  
 
-### To make it harder to understand your code
+### It should make your code easier to read and understand
 
 &nbsp;  
 
@@ -116,7 +94,7 @@
 
 &nbsp;  
 
-### To mislead other programmers
+### It should not mislead other programmers
 
 &nbsp;  
 
@@ -130,7 +108,7 @@
 
 &nbsp;  
 
-### To be funny and clever
+### It should always aim at solving the problem in a simpler way, not in a more clever way
 
 &nbsp;  
 

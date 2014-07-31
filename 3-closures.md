@@ -37,7 +37,7 @@ trailing("impossible") {
 
 &nbsp;  
 
-#### Trailing closures work in closures themselfs
+#### Trailing closures in closures
 
 &nbsp;  
 
@@ -114,12 +114,12 @@ notChainedResult
 &nbsp;  
 
 ```swift
-@infix func + (argument: (Int -> Int) -> Int, closure: Int -> Int) -> Int {
+@infix func --> (argument: (Int -> Int) -> Int, closure: Int -> Int) -> Int {
  	return argument(closure)
 }
 
 let operatorChainedResult = 
-		closureReturningClosure { 10 * $0 } + { 20 * $0 }
+		closureReturningClosure { 10 * $0 } --> { 20 * $0 }
 
 operatorChainedResult
 ```
