@@ -80,7 +80,7 @@
 
 &nbsp;  
 
-### It should make your code easier to read and understand
+### It should make your code easier to read and understand - do not mislead other programmers
 
 &nbsp;  
 
@@ -94,21 +94,7 @@
 
 &nbsp;  
 
-### It should not mislead other programmers
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-&nbsp;  
-
-### It should always aim at solving the problem in a simpler way, not in a more clever way
+### It should aim at solving the problem in a simpler way, not in a more clever way
 
 &nbsp;  
 
