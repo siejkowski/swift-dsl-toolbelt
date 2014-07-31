@@ -114,6 +114,7 @@ notChainedResult
 &nbsp;  
 
 ```swift
+operator infix --> {}
 @infix func --> (argument: (Int -> Int) -> Int, closure: Int -> Int) -> Int {
  	return argument(closure)
 }
